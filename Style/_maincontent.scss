@@ -1,7 +1,33 @@
 .maincontent{
-    background-image: url("/Images/back.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 900px;
 }
+    $w: 100%;
+    $h: 610px;
+    .slider{
+        width: $w;
+        height: $h;
+        overflow: hidden;
+        position: relative;
+    }
+    .slider__strip{
+        display: flex;
+        transition: transform .5s ease-in-out;
+    }
+    .slider__img{
+        width: 100%;
+        object-fit: cover;
+        //flex-shrink: 0;
+        // background-size: cover;
+        // background-color: red;
+        // background-image: url(/images/perro-beso-1024x576.webp);
+    }
+    .slider__btn{
+        position: absolute;
+        bottom: 0px;
+    }
+    .slider__btn--left{
+        left: 0px;
+    }
+    .slider__btn--right{
+        right: 0px;
+    }
 

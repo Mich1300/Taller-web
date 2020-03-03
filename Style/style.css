@@ -61,10 +61,127 @@
           justify-content: center;
 }
 
-.maincontent {
-  background-image: url("/Images/back1.png");
-  background-size: cover;
+.slider {
   width: 100%;
-  height: 900px;
+  height: 610px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__strip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.slider__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  bottom: 0px;
+}
+
+.slider__btn--left {
+  left: 0px;
+}
+
+.slider__btn--right {
+  right: 0px;
+}
+
+.everything {
+  background-color: black;
+  width: 100%;
+  height: 930px;
+}
+
+.everything__container {
+  position: relative;
+}
+
+.everything__containerwomanimg3 {
+  position: absolute;
+  width: 450px;
+  left: 860px;
+}
+
+.everything__containerwomanimg1 {
+  position: absolute;
+  width: 400px;
+  left: 183px;
+  top: 80px;
+}
+
+.everything__containerwomanimg2 {
+  position: absolute;
+  width: 300px;
+  left: 783px;
+  top: 312px;
+}
+
+.everything__containerwomantitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  color: white;
+  width: 250px;
+  height: 50px;
+  background-color: #ea1d24;
+  top: 712px;
+}
+
+.everything__containermanimg3 {
+  position: absolute;
+  width: 550px;
+  top: 0px;
+  left: 183px;
+}
+
+.everything__containermanimg1 {
+  position: absolute;
+  width: 350px;
+  left: 263px;
+  top: 250px;
+}
+
+.everything__containermanimg2 {
+  position: absolute;
+  width: 410px;
+  left: 880px;
+  top: 19px;
+}
+
+.everything__containermantitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  color: white;
+  width: 250px;
+  height: 50px;
+  background-color: #ea1d24;
+  right: 0px;
+  top: 602px;
 }
 /*# sourceMappingURL=style.css.map */

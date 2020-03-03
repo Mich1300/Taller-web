@@ -1,13 +1,11 @@
-.headernav{
-    
+.headernav{  
     background-color: black;
     height: 127px;
 }
 
 .headernav__top{
     height: 81px;
-    display: flex;
-    
+    display: flex;   
 }
 
 .headernav__bottom{
@@ -18,18 +16,14 @@
 }
 
 .headernav__img{
- 
     width: 156px;
     height: 23px;
     margin: 30px;
 }
 
 .headernav__users{
-
     display: flex;
-    margin: auto 30px auto auto;
-    
-    
+    margin: auto 30px auto auto;   
 }
 
 .headernav__icons{
