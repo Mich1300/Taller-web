@@ -188,8 +188,15 @@
 .everything_degree {
   width: 100%;
   height: 700px;
-  background-image: url("./Images/Group19.png");
+  background-image: url("../Images/code.png");
   background-size: cover;
+}
+
+.everything_bug {
+  width: 100%;
+  height: 650px;
+  background-image: url("../Images/bug.png");
+  background-size: contain;
 }
 
 .mainFooter {
