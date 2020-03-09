@@ -197,7 +197,7 @@
   height: 500px;
   background-color: white;
   background-size: cover;
-  background-image: url(/Images/backfooter.png);
+  background-image: url(../Images/backfooter.png);
 }
 
 .footertext {
