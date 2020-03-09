@@ -1,35 +1,37 @@
-window.addEventListener('resize', handleWindowResize);
 var btnRight = document.querySelector('.slider__btn--right');
 var btnLeft = document.querySelector('.slider__btn--left');
-var strip = document.querySelector('.slider__strip');
-var slider = document.querySelector('.slider');
+var strip = document.querySelector('.slider__img');
+var slider = document.querySelector('.slider__strip');
 var posX = 0;
 var width = slider.offsetWidth;
+var quality = 0;
+
+
 function handleBtnNextClick () {
-    quantity++;
+    console.log("hola");
+    console.log(quality);
     quality++;
-    buttonImage.setAttribute('src', '/Images/back' +  quality + '.png');
-    if(quality==6){
+    strip.setAttribute('src', './Images/back' +  quality + '.png');
+    if(quality<3){
         quality=0;
     }
 }
 
-btnRight.addEventListener('click', handleBtnNextClick);
-
 function handleBtnPrevClick () {
+    console.log(quality);
     quality--;
-    buttonImage.setAttribute('src', '/Images/back' +  quality + '.png');
-    if(quality==0){
-        quality=6;
+    strip.setAttribute('src', './Images/back' +  quality + '.png');
+    if(quality>0){
+        quality=2;
     }
 
-    console.log(quality);
+   
 }
-andleBtnNextClick();
+handleBtnNextClick();
 handleBtnPrevClick ();
-buttonDer.addEventListener('click', handleButtonD);
-buttonIzq.addEventListener('click', handleButtonI);
+btnRight.addEventListener('click', handleBtnNextClick);
 btnLeft.addEventListener('click', handleBtnPrevClick);
+
 
 //setTimeout(handleBtnNextClick, 3000); // una vez
 //setInterval(handleBtnNextClick, 3000); // varias veces
