@@ -8,29 +8,34 @@ var quality = 0;
 
 
 function handleBtnNextClick () {
-    console.log("hola");
+    
     console.log(quality);
-    quality++;
+   
     strip.setAttribute('src', './Images/back' +  quality + '.png');
-    if(quality<3){
+    if(quality===3){
         quality=0;
     }
+
+    quality++;
+
+    btnRight.addEventListener('click', handleBtnNextClick);
 }
 
 function handleBtnPrevClick () {
     console.log(quality);
     quality--;
     strip.setAttribute('src', './Images/back' +  quality + '.png');
-    if(quality>0){
+    if(quality===0){
         quality=2;
     }
+
+    btnLeft.addEventListener('click', handleBtnPrevClick);
 
    
 }
 handleBtnNextClick();
 handleBtnPrevClick ();
-btnRight.addEventListener('click', handleBtnNextClick);
-btnLeft.addEventListener('click', handleBtnPrevClick);
+
 
 
 //setTimeout(handleBtnNextClick, 3000); // una vez
