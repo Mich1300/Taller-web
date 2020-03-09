@@ -23,7 +23,10 @@
     .slider__btn{
         position: absolute;
         bottom: 0px;
+        cursor: pointer;
+        outline: none;
     }
+
     .slider__btn--left{
         left: 0px;
     }
