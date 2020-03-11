@@ -12,7 +12,7 @@ function handleBtnNextClick () {
     console.log(quality);
    
     strip.setAttribute('src', './Images/back' +  quality + '.png');
-    if(quality===3){
+    if(quality==2){
         quality=0;
     }
 
@@ -25,7 +25,7 @@ function handleBtnPrevClick () {
     console.log(quality);
     quality--;
     strip.setAttribute('src', './Images/back' +  quality + '.png');
-    if(quality===0){
+    if(quality==0){
         quality=2;
     }
 
