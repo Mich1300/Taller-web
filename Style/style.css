@@ -193,11 +193,18 @@
   background-image: url("../Images/code.png");
   background-size: cover;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .everything__video {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
+  margin-top: 10%;
 }
 
 .everything_bug {
