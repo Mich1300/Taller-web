@@ -195,16 +195,9 @@
   background-repeat: no-repeat;
 }
 
-.everything_degreenew {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100;
+.everything__video {
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 250px;
+  height: 100%;
 }
 
 .everything_bug {
