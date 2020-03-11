@@ -122,6 +122,10 @@
   top: 80px;
 }
 
+.everything__containerwomanimg1:hover {
+  color: yellow;
+}
+
 .everything__containerwomanimg2 {
   position: absolute;
   width: 300px;
